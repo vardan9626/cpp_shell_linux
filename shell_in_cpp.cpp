@@ -37,7 +37,7 @@ int main()
         // Split the input into tokens
         while (getline(IN, tmp, ' ')){
             tmp = trim(tmp);
-            tokens.push_back(tmp);
+            if(tmp.size()>0)tokens.push_back(tmp);
         }
         // Check if the input is empty
         if (tokens.size() == 0)continue;
